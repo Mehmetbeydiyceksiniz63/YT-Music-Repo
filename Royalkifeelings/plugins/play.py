@@ -43,7 +43,7 @@ useer = "NaN"
 ACTV_CALLS = []
 
     
-@Royalboyamit.on_message(command(["play", f"play@{BOT_USERNAME}"]) & other_filters)
+@Royalboyamit.on_message(command(["oynat", f"play@{BOT_USERNAME}"]) & other_filters)
 async def play(c: Royalboyamit, m: Message):
     await m.delete()
     replied = m.reply_to_message

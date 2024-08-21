@@ -34,7 +34,7 @@ ydl_opts = {
 }
 
 
-@Royalboyamit.on_message(command(["song", f"song@{bn}"]) & ~filters.edited)
+@Royalboyamit.on_message(command(["sarki", f"song@{bn}"]) & ~filters.edited)
 def song(_, message):
     query = " ".join(message.command[1:])
     m = message.reply("🔎 finding song...")
